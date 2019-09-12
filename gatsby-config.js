@@ -5,5 +5,18 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Testing what I am learning",
+    description: "trying to render tags in different pages and manage that programatically",
+  },
+  plugins: [
+    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`, 
+      options: {
+        name: 'pages', 
+        path: `${__dirname}/src/pages`
+      }
+    }
+  ]
 }
