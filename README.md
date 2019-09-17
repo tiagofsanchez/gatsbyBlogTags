@@ -14,7 +14,6 @@ Things that I have done and learnt here:
 The end goal would be to implement that in my Blog where I am using `gatsby-theme-blog`.
 
 ## This is how it looks like
-<<<<<<< HEAD
 ![](https://github.com/tiagofsanchez/gatsbyBlogTags/blob/master/src/images/blogTags.gif?raw=true)
 =======
 ![](https://github.com/tiagofsanchez/gatsbyBlogTags/blob/master/src/images/blogTags.gif?raw=true)
