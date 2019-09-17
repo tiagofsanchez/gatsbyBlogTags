@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import Header from '../components/Header';
 import { graphql } from "gatsby"
 
-const Template = (props ) => {
+const Template = (props) => {
 
   console.log(props)
   console.log(props.pageContext)

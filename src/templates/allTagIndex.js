@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql, Link } from "gatsby";
-import Header from "../components/Header";
-import TagsMenu from "../components/TagsMenu";
+import { graphql, Link } from "gatsby"
+import Header from "../components/Header"
+import TagsMenu from "../components/TagsMenu"
 
-const AllTagsTemplate = ({ data, pageContext}) => {
+const AllTagsTemplate = ({ data, pageContext }) => {
   const { posts, tags } = pageContext
   console.log(posts)
   console.log(tags)
@@ -20,14 +20,15 @@ const AllTagsTemplate = ({ data, pageContext}) => {
         }}
       >
         <h2>Posts about all tags </h2> <TagsMenu tagName={tags} />
-        {posts && posts.map(post => {
-          const { title , path } = post.node.frontmatter
-          return (
-            <Link to={path} key={title}>
-              <h4>{title}</h4>
-            </Link>
-          )
-        })}
+        {posts &&
+          posts.map(post => {
+            const { title, path } = post.node.frontmatter
+            return (
+              <Link to={path} key={title}>
+                <h4>{title}</h4>
+              </Link>
+            )
+          })}
       </div>
     </div>
   )
